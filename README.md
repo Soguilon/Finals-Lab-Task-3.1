@@ -57,24 +57,24 @@
 #Screenshots
 ## Query Statements
 1.) Task 1
-![Image](https://github.com/user-attachments/assets/deb92121-c6f0-4d44-9dc7-0e74c9d2ec93)
+- ![Image](https://github.com/user-attachments/assets/deb92121-c6f0-4d44-9dc7-0e74c9d2ec93)
 2.) Task 2
-![Image](https://github.com/user-attachments/assets/169f8f3e-1e01-467f-8c1c-d5b2be644ee4)
+- ![Image](https://github.com/user-attachments/assets/169f8f3e-1e01-467f-8c1c-d5b2be644ee4)
 3.) Task 3
-![Image](https://github.com/user-attachments/assets/f3d8c1b5-a4b8-4548-b0c3-69e99bf9c1d0)
+- ![Image](https://github.com/user-attachments/assets/f3d8c1b5-a4b8-4548-b0c3-69e99bf9c1d0)
 4.) Task 4
-![Image](https://github.com/user-attachments/assets/ecca46a5-575f-4bb6-9185-92e39df316a8)
+- ![Image](https://github.com/user-attachments/assets/ecca46a5-575f-4bb6-9185-92e39df316a8)
 5.) Task 5
-![Image](https://github.com/user-attachments/assets/2c881e0c-8a2d-4463-a492-8f0d3be7530d)
+- ![Image](https://github.com/user-attachments/assets/2c881e0c-8a2d-4463-a492-8f0d3be7530d)
 
 ## Output of Query Statements
 1.) Task 1
-![Image](https://github.com/user-attachments/assets/15971fe6-c314-42d6-8fda-0a34f6a2fb00)
+- ![Image](https://github.com/user-attachments/assets/15971fe6-c314-42d6-8fda-0a34f6a2fb00)
 2.) Task 2
-![Image](https://github.com/user-attachments/assets/f532ce24-0488-4c40-9d42-813272ebe438)
+- ![Image](https://github.com/user-attachments/assets/f532ce24-0488-4c40-9d42-813272ebe438)
 3.) Task 3
-![Image](https://github.com/user-attachments/assets/e6afeff3-018a-4702-8b24-bd0f3e55725e)
+- ![Image](https://github.com/user-attachments/assets/e6afeff3-018a-4702-8b24-bd0f3e55725e)
 4.) Task 4
-![Image](https://github.com/user-attachments/assets/c93cc7ad-3f0b-4794-a981-2e0a7ce842e7)
+- ![Image](https://github.com/user-attachments/assets/c93cc7ad-3f0b-4794-a981-2e0a7ce842e7)
 5.) Task 5
-![Image](https://github.com/user-attachments/assets/63173b6b-9ad1-4a0d-9eb8-ce9eabfbe02e)
+- ![Image](https://github.com/user-attachments/assets/63173b6b-9ad1-4a0d-9eb8-ce9eabfbe02e)
