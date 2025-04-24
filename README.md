@@ -54,7 +54,7 @@
 
 
 
-#Screenshots
+# Screenshots
 ## Query Statements
 
 1.) Task 1
