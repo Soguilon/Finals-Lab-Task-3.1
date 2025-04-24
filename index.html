@@ -1,0 +1,414 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EDM Tasks Portfolio</title>
+    <style>
+        /* General body and background setup */
+        body {
+            background-color: black;
+            background-image: url('https://gifdb.com/images/high/data-circuit-background-jigp4xxr9jq22ivb.gif');
+            background-size: cover;
+            color: white;
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-position: center;
+            background-attachment: fixed;
+            text-shadow: 0 0 15px rgba(0, 51, 102, 0.7), 0 0 25px rgba(0, 51, 102, 0.7);
+        }
+
+        /* Header style */
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Darker background for header */
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 51, 102, 0.7);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 4em;
+            color: skyblue; /* Sky blue color */
+            text-shadow: 0 0 15px rgba(135, 206, 250, 0.7), 0 0 30px rgba(135, 206, 250, 0.7); /* Light blue glow */
+            margin: 0;
+            animation: glowHeader 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes glowHeader {
+            0% {
+                text-shadow: 0 0 15px rgba(135, 206, 250, 0.7), 0 0 30px rgba(135, 206, 250, 0.7);
+            }
+            100% {
+                text-shadow: 0 0 25px rgba(135, 206, 250, 1), 0 0 50px rgba(135, 206, 250, 0.7), 0 0 70px rgba(135, 206, 250, 0.7);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Navigation styling */
+        nav {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 51, 102, 0.7);
+        }
+
+        nav a {
+            color: rgba(135, 206, 250, 1);
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 12px 20px;
+            margin: 0 20px;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: rgba(0, 51, 102, 1);
+            color: white;
+            box-shadow: 0 0 20px rgba(135, 206, 250, 0.7);
+            text-shadow: 0 0 25px rgba(135, 206, 250, 1), 0 0 50px rgba(135, 206, 250, 0.7);
+        }
+
+        /* Section styling */
+        .content {
+            padding: 40px;
+            z-index: 1;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 0;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .hero img {
+            width: 300px;
+            border: 5px solid rgba(0, 51, 102, 1);
+            box-shadow: 0 0 20px rgba(0, 51, 102, 0.7);
+            transition: all 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .hero img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 51, 102, 0.7);
+        }
+
+        /* Section headers */
+        .section h2 {
+            font-size: 2.5em;
+            color: skyblue; /* Sky blue color */
+            text-align: center;
+            text-shadow: 0 0 15px rgba(135, 206, 250, 0.7), 0 0 30px rgba(135, 206, 250, 0.7);
+            animation: glowHeader 1.5s ease-in-out infinite alternate;
+            margin-bottom: 20px;
+        }
+
+        .section p, .section ul {
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        /* Box around sections for contrast */
+        .box {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(0, 51, 102, 0.7);
+            margin-bottom: 40px;
+            animation: glow 2s ease-in-out infinite alternate;
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 20px rgba(0, 51, 102, 0.7);
+            }
+            100% {
+                box-shadow: 0 0 40px rgba(0, 51, 102, 0.7);
+            }
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        /* Project links inside boxes */
+        .box a {
+            display: block;
+            color: white;
+            background-color: rgba(0, 51, 102, 1);
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 51, 102, 0.7);
+        }
+
+        .box a:hover {
+            background-color: rgba(135, 206, 250, 1);
+            color: rgba(0, 0, 0, 1);
+            box-shadow: 0 0 20px rgba(135, 206, 250, 0.7);
+            text-shadow: 0 0 25px rgba(135, 206, 250, 1), 0 0 50px rgba(135, 206, 250, 0.7);
+        }
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #00ccff;
+    object-fit: contain; /* or 'cover' if you prefer cropping */
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* or use 'contain' to avoid cropping */
+    display: block;
+}
+        /* Footer styling */
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: rgba(0, 51, 102, 1);
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 51, 102, 0.7);
+        }
+
+        footer p {
+            font-size: 1.1em;
+            text-shadow: 0 0 8px rgba(0, 51, 102, 0.7), 0 0 15px rgba(0, 51, 102, 0.7);
+        }
+
+        /* Add smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>EDM Tasks Portfolio</h1>
+</header>
+<section class="section" id="midterm-task1">
+    <div class="box">
+        <h2>📊 Finals Lab Task 3.1: Using MYSQL CLAUSE</h2>
+        <p>This portfolio demonstrates basic SQL skills through the use of MySQL queries. It involves managing an online course database by performing data retrieval, aggregation, and sorting based on a pre-existing dataset.</p>
+
+        <a href="https://github.com/user-attachments/files/19892458/Finals.Task.3.Using.MYSQL.Clause.Soguilon.docx" download>
+            ⬇️ Download Word File (Finals Lab Task 3.1)
+        </a>
+
+        <h3 style="text-align:center; color:skyblue; margin-top:20px;">📝 Step-by-Step Process</h3>
+        <ul style="list-style-type:none; padding-left:0;">
+           <ol>
+    <li><strong>Step 1: Create the Database</strong>
+      <ul>
+        <li>Open MySQL environment (e.g., MySQL Workbench or phpMyAdmin)</li>
+        <li>Run: <code>CREATE DATABASE online_courseDB;</code></li>
+      </ul>
+    </li>
+    <li><strong>Step 2: Select the Database</strong>
+      <ul>
+        <li>Run: <code>USE online_courseDB;</code></li>
+      </ul>
+    </li>
+    <li><strong>Step 3: Load Initial Data</strong>
+      <ul>
+        <li>Download and import <code>onlineCourse.l</code> file</li>
+        <li>Table <code>courses</code> should include fields: id, course_name, category, enrollment_limit, students_enrolled</li>
+      </ul>
+    </li>
+    <li><strong>Step 4: Perform SQL Tasks</strong>
+      <ul>
+        <li><strong>Task 1:</strong> Show courses below capacity (use <code>SELECT</code> with <code>WHERE</code>)</li>
+        <li><strong>Task 2:</strong> Group by category and sum students (use <code>GROUP BY</code> + <code>SUM()</code>)</li>
+        <li><strong>Task 3:</strong> Show fully enrolled courses (use <code>WHERE</code> equality)</li>
+        <li><strong>Task 4:</strong> Total students in all courses (use <code>SUM()</code>)</li>
+        <li><strong>Task 5:</strong> Sort courses by enrolled students (<code>ORDER BY</code> ASC)</li>
+      </ul>
+    </li>
+    <li><strong>Final Step:</strong> Review outputs and check for correctness</li>
+  </ol>
+
+  <h3>Screenshots - Query Statements</h3>
+  <ul>
+    <li>Task 1: <img src="https://github.com/user-attachments/assets/deb92121-c6f0-4d44-9dc7-0e74c9d2ec93" alt="Task 1 Query"></li>
+    <li>Task 2: <img src="https://github.com/user-attachments/assets/169f8f3e-1e01-467f-8c1c-d5b2be644ee4" alt="Task 2 Query"></li>
+    <li>Task 3: <img src="https://github.com/user-attachments/assets/f3d8c1b5-a4b8-4548-b0c3-69e99bf9c1d0" alt="Task 3 Query"></li>
+    <li>Task 4: <img src="https://github.com/user-attachments/assets/ecca46a5-575f-4bb6-9185-92e39df316a8" alt="Task 4 Query"></li>
+    <li>Task 5: <img src="https://github.com/user-attachments/assets/2c881e0c-8a2d-4463-a492-8f0d3be7530d" alt="Task 5 Query"></li>
+  </ul>
+
+  <h3>Screenshots - Output of Query Statements</h3>
+  <ul>
+    <li>Task 1 Output: <img src="https://github.com/user-attachments/assets/15971fe6-c314-42d6-8fda-0a34f6a2fb00" alt="Task 1 Output"></li>
+    <li>Task 2 Output: <img src="https://github.com/user-attachments/assets/f532ce24-0488-4c40-9d42-813272ebe438" alt="Task 2 Output"></li>
+    <li>Task 3 Output: <img src="https://github.com/user-attachments/assets/e6afeff3-018a-4702-8b24-bd0f3e55725e" alt="Task 3 Output"></li>
+    <li>Task 4 Output: <img src="https://github.com/user-attachments/assets/c93cc7ad-3f0b-4794-a981-2e0a7ce842e7" alt="Task 4 Output"></li>
+    <li>Task 5 Output: <img src="https://github.com/user-attachments/assets/63173b6b-9ad1-4a0d-9eb8-ce9eabfbe02e" alt="Task 5 Output"></li>
+  </ul>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Carl Asnef B. Soguilon. All rights reserved.</p>
+   <a href="https://github.com/Soguilon/Finals-Lab-Task-3.1" target="_blank" style="color:var(--neon); text-shadow: 0 0 6px var(--neon);">View Finals Lab Task 3.1 on Github</a>
+</footer>
+
+<!-- JavaScript for Scroll Button -->
+<script>
+    let mybutton = document.getElementById("scrollTopBtn");
+
+    window.onscroll = function() {
+        mybutton.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
+    };
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+<style>
+    /* Scroll to Top Button */
+    #scrollTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: rgba(0, 191, 255, 0.8);
+        color: white;
+        cursor: pointer;
+        padding: 10px 15px;
+        border-radius: 50%;
+        font-size: 18px;
+        box-shadow: 0 0 20px rgba(0, 191, 255, 0.6);
+        transition: 0.3s;
+    }
+
+    #scrollTopBtn:hover {
+        background-color: rgba(0, 191, 255, 1);
+        box-shadow: 0 0 30px rgba(0, 191, 255, 1);
+    }
+
+    /* Header Glow */
+    h2 {
+        color: skyblue;
+        text-shadow: 0 0 8px lightblue, 0 0 16px lightblue;
+        animation: glow 2.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 8px lightblue, 0 0 16px lightblue;
+        }
+        to {
+            text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
+        }
+    }
+
+    /* Project Links Styling */
+    .box a {
+        display: block;
+        background-color: rgba(0, 51, 102, 0.7);
+        color: white;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 12px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 10px transparent;
+    }
+
+    .box a:hover {
+        box-shadow: 0 0 20px #00ccff, 0 0 40px #00ccff;
+        transform: scale(1.03);
+    }
+
+    /* Blur/Overlay */
+    .box {
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(0, 191, 255, 0.3);
+        padding: 25px;
+        border-radius: 18px;
+        box-shadow: 0 0 15px rgba(0, 191, 255, 0.2);
+        margin: 20px auto;
+        max-width: 900px;
+        animation: fadeIn 1.2s ease-in;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* About Image Neon Effect */
+    .about-content img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        box-shadow: 0 0 20px #00ccff, 0 0 40px #00ccff;
+        animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
+    }
+
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        color: #e0f7ff;
+        background: url('https://gifdb.com/images/high/data-circuit-background-jigp4xxr9jq22ivb.gif') no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        color: lightblue;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+</style>
