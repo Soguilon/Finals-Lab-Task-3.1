@@ -2,8 +2,6 @@
 - This portfolio demonstrates basic SQL skills through the use of MySQL queries. It involves managing an online course database by performing data retrieval, aggregation, and sorting based on a pre-existing dataset.
 
 ## Step by Step Process
-**Step-by-Step Process for the Online Course Portfolio:**
-
 - **Step 1: Create the Database**
   - Open your MySQL environment (like MySQL Workbench or phpMyAdmin).
   - Create a new database by typing the command:
